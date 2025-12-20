@@ -1,0 +1,8 @@
+{
+  "id": "bsky-7k9m2x5p",
+  "name": "Bluesky Plugin for SocialGata",
+  "version": "1.0.0",
+  "description": "Browse Bluesky feeds, profiles, and posts",
+  "script": "dist/index.js",
+  "options": "dist/options.html"
+}
