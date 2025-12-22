@@ -277,7 +277,7 @@ const getFeed = async (request?: GetFeedRequest): Promise<GetFeedResponse> => {
   }
 };
 
-const getUser = async (request: GetUserRequest): Promise<GetUserReponse> => {
+const getUser = async (request: GetUserRequest): Promise<GetUserResponse> => {
   try {
     // Resolve handle to DID
     const resolveUrl = new URL(
@@ -363,6 +363,9 @@ const getComments = async (
   request: GetCommentsRequest
 ): Promise<GetCommentsResponse> => {
   try {
+    if (!request.apiId) {
+      return { items: [] };
+    }
     const url = new URL(`${BLUESKY_PUBLIC_API}/app.bsky.feed.getPostThread`);
     url.searchParams.append("uri", request.apiId);
     url.searchParams.append("depth", "10");
