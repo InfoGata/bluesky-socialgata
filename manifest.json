@@ -4,5 +4,7 @@
   "version": "1.0.0",
   "description": "Browse Bluesky feeds, profiles, and posts",
   "script": "dist/index.js",
-  "options": "dist/options.html"
+  "options": "dist/options.html",
+  "updateUrl": "https://cdn.jsdelivr.net/gh/InfoGata/bluesky-socialgata@latest/manifest.json",
+  "homepage": "https://github.com/InfoGata/bluesky-socialgata"
 }
