@@ -1,6 +1,5 @@
 import { MessageType, UiMessageType } from "./shared";
 
-const pluginName = "bluesky";
 const BLUESKY_SERVICE_URL = "https://bsky.social/xrpc";
 const BLUESKY_PUBLIC_API = "https://public.api.bsky.app/xrpc";
 
@@ -135,7 +134,6 @@ const blueskyPostToPost = (post: BlueskyPostView): Post => {
     score: post.likeCount || 0,
     numOfComments: post.replyCount || 0,
     publishedDate: post.record?.createdAt || post.indexedAt,
-    pluginId: pluginName,
     url: post.embed?.external?.uri,
     thumbnailUrl: post.embed?.external?.thumb || post.embed?.images?.[0]?.thumb,
   };
