@@ -6,5 +6,8 @@
   "script": "dist/index.js",
   "options": "dist/options.html",
   "updateUrl": "https://cdn.jsdelivr.net/gh/InfoGata/bluesky-socialgata@latest/manifest.json",
-  "homepage": "https://github.com/InfoGata/bluesky-socialgata"
+  "homepage": "https://github.com/InfoGata/bluesky-socialgata",
+  "siteMatch": [
+    "https://bsky.app/*"
+  ]
 }
